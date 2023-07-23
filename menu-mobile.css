@@ -1,0 +1,122 @@
+/* Menu Mobile logo e icone */
+.menu-mobile {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 3.5rem;
+  align-items: center;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.logo-mobile {
+  width: 60px;
+}
+.ico-menu {
+  grid-column: 3;
+  height: 40px;
+  width: 40px;
+}
+
+/* popup menu */
+
+.menuPopup {
+  background-color: #e6edf1;
+  padding: 1rem 0rem;
+  display: none;
+  margin-top: 1rem;
+}
+
+.menuPopup h2 {
+  text-align: center;
+  font-family: "fira sans";
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.menuPopup nav ul {
+  margin-top: 0.2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.menuPopup ul li {
+  padding: 0.1rem 0rem;
+  z-index: 1;
+  position: relative;
+  max-width: 1200px;
+}
+/* deixar o A com 100% de width*/
+.menuPopup nav ul li a {
+  color: black;
+  display: block;
+  max-width: 100%;
+}
+.menuPopup nav ul li a::after {
+  content: "";
+  background-color: transparent;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  width: 236px;
+  height: 4px;
+  top: 10px;
+  z-index: -1;
+  margin: 5px auto;
+}
+.menuPopup nav ul li a:hover::after {
+  background-color: #d5e1e8;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  z-index: -1;
+  margin: 5px auto;
+}
+.menuPopup nav ul li a {
+  color: black;
+}
+
+.open {
+  display: block;
+}
+/* .menuPopup .close-btn {
+  background: url("/img/close.svg") no-repeat;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  background-size: contain;
+  right: 0;
+  top: 0;
+  padding-right: 0.8rem;
+  padding-top: 0.8rem;
+  max-width: 100%;
+} */
+
+@media (max-width: 529px) {
+  .menu {
+    display: none;
+  }
+  .section-1 img {
+    grid-row-start: 2;
+    margin-top: 1rem;
+  }
+  .info-principal p {
+    grid-row-start: 1;
+  }
+}
+
+@media (min-width: 529px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu-mobile {
+    padding: 1.5rem 1.6rem 0 2rem;
+  }
+}

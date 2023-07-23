@@ -1,0 +1,42 @@
+body,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h3,
+h4 {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*ressetar modal */
+.menu-popup {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

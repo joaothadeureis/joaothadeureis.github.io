@@ -1,0 +1,52 @@
+/* menu principal*/
+.menu {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 100px auto;
+  justify-content: space-between;
+  margin-left: 8.75rem;
+  margin-right: 8.75rem;
+}
+
+.menu nav {
+  display: grid;
+  align-content: center;
+}
+
+.menu ul {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.menu ul li a {
+  color: #141414;
+  padding: 20px;
+  font-family: fira sans;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border-bottom: 0.2rem solid transparent;
+}
+.menu ul li a:hover {
+  border-color: #006ab3;
+}
+
+@media (max-width: 1230px) {
+  .menu {
+    padding-right: 2.6rem;
+    padding-left: 8rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu {
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .logotipo {
+    width: 70px;
+  }
+}

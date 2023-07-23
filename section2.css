@@ -1,0 +1,236 @@
+.section-2 {
+  margin-top: 8.125rem;
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-titulo {
+  display: grid;
+  justify-content: center;
+}
+.titulo-decoration {
+  font-family: "fira sans";
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #e0e0e0;
+  line-height: 1.12;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+.subtitulo-eu {
+  font-family: "fira sans";
+  font-size: 1.3rem;
+  color: #525252;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+}
+
+.subtitulo-eu b {
+  color: #000;
+}
+.exp-1,
+.exp-2,
+.exp-3 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  justify-items: center;
+  margin-bottom: 2.19rem;
+}
+
+.exp-1:hover,
+.exp-2:hover,
+.exp-3:hover {
+  background-color: #eeeeee;
+  border-color: #dddddd;
+}
+.parte-1 h2 {
+  font-family: "Playfair Display";
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+.exp-1::before,
+.exp-2::before,
+.exp-3::before {
+  content: "";
+  height: 20px;
+  width: 4px;
+  background: linear-gradient(180deg, #00468f 0%, #006ab3 100%);
+  position: absolute;
+  left: -4px;
+  top: 27px;
+}
+
+.exp-1 span,
+.exp-2 span,
+.exp-3 span {
+  position: absolute;
+  left: -130px;
+  top: 28px;
+  width: 100px;
+  font-size: 0.85rem;
+  font-family: "fira sans";
+  text-align: right;
+}
+
+.parte-1 {
+  display: grid;
+  gap: 10px;
+}
+
+.parte-1 p {
+  font-family: "fira sans";
+  font-size: 1rem;
+  color: #525252;
+}
+
+.parte-2 h3 {
+  font-family: "Playfair Display";
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.parte-2 ul {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.parte-2 ul li {
+  background-color: #fff;
+  font-family: "fira sans";
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1230px) {
+  .section-2 {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-2 {
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+  }
+  .titulo-decoration {
+    font-size: 8rem;
+    text-align: center;
+    word-break: normal;
+    max-width: 100%;
+  }
+
+  .subtitulo-eu {
+    text-align: center;
+    max-width: fit-content;
+  }
+
+  .exp-1 span,
+  .exp-2 span,
+  .exp-3 span {
+    display: none;
+  }
+  .local-1::after {
+    content: "2018";
+    font-family: "fira sans";
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+  }
+  .local-2::after {
+    content: "2019-2022";
+    font-family: "fira sans";
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+  }
+
+  .local-3::after {
+    content: "2023";
+    font-family: "fira sans";
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .section-2 {
+    margin-top: 4rem;
+  }
+  .titulo-decoration {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .titulo-decoration {
+    font-size: 5rem;
+  }
+  .subtitulo-eu {
+    text-align: left;
+  }
+}
+
+@media (max-width: 550px) {
+  .titulo-decoration {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .subtitulo-eu {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-decoration {
+    font-size: 3.5rem;
+  }
+
+  .exp-1,
+  .exp-2,
+  .exp-3 {
+    grid-template-columns: 1fr;
+  }
+  .parte-1 h2 {
+    text-align: center;
+  }
+  .parte-1 p {
+    text-align: center;
+  }
+  .parte-2 ul {
+    margin-top: 0.7rem;
+  }
+  .section-2 {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .titulo-decoration {
+    font-size: 2.8rem;
+  }
+}
